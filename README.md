@@ -163,3 +163,22 @@ A spider, that given a single GND:
 * deliver the JSON
 * format the JSON via some frontend library, or do some serverside rendering (HTML)
 
+Sameas-service
+--------------
+
+* Sources like DBpedia are updated regularly (x month)
+* VIAF is updated about monthly
+* GND dump is updated monthly
+
+GNDs could be fetched on-demand.
+
+
+Missing pieces
+--------------
+
+There are GNDs, that have no backlink from DBpedia, because they do not appear
+on the Wikipedia page, e.g. article about Juli Zeh. Compare all GNDs
+and find matching or similar Wikipedia page titles, so we could relate
+dbpedia and GND without a direct connection.
+
+
