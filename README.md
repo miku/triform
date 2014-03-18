@@ -147,15 +147,15 @@ How could a first iteration look?
 
 Compontents:
 
-* A simple own sameAs service that updates itself continuosly.
+* A simple *sameAs service* that updates itself continuously.
 
 A spider, that given a single GND:
 
 * checks the type of the GND (person, place, etc.)
 * retrieves all related documents (via sameAs service)
 * will filter out a number of predicates, that has been configured for a certain
-  resource type
-* rank the properties by source
+  resource type (e.g. birthdays for people, capital for countries, etc.)
+* maybe, rank the properties by source
 * filter out properties that have the same predicate and object
   (only keep the highest ranked source)
 * construct a JSON-LD probably, with all information condensed into a single file
