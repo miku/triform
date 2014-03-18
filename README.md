@@ -82,7 +82,8 @@ Problems with GND virtuoso
     Connected to OpenLink Virtuoso
     Driver: 07.10.3207 OpenLink Virtuoso ODBC Driver
 
-    *** Error 42000: [Virtuoso Driver][Virtuoso Server]RDFGE: rdf box with a geometry rdf type and a non geometry content
+    *** Error 42000: [Virtuoso Driver][Virtuoso Server]RDFGE: rdf box with a geometry
+          rdf type and a non geometry content
     at line 1 of Top-Level:
     DB.DBA.TTLP_MT(file_to_string_output('/Users/tir/tmp/GND.ttl'),
                    '', 'http://gndapps.com', 160)
