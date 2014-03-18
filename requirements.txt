@@ -1,0 +1,6 @@
+BeautifulSoup==3.2.1
+luigi==1.0.13
+prettytable==0.7.2
+requests==2.2.1
+slugify==0.0.1
+wsgiref==0.1.2
