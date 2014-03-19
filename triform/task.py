@@ -18,7 +18,7 @@ import os
 import re
 import slugify
 
-HOME = '/tmp/triform'
+HOME = '/media/mtc/Data/triform'
 
 logger = logging.getLogger('luigi-interface')
 
@@ -71,13 +71,13 @@ class DefaultTask(luigi.Task):
                 continue
             if p in ('date', 'end') and latest is True:
                 if hasattr(self, 'latest') and hasattr(self.latest, '__call__'):
-                    parts.add('latest-%s' % slugify.slugify(str(self.latest())))
+                    parts.add('latest-%s' % slugify.slugify(unicode(self.latest())))
                 else:
                     # TODO: latest should be allowed to be both a function and
                     # an attribute
                     raise RuntimeError('latest need to be a callable for now')
             else:
-                parts.add('%s-%s' % (p, slugify.slugify(str(getattr(self, p)))))
+                parts.add('%s-%s' % (p, slugify.slugify(unicode(getattr(self, p)))))
         fingerprint = '-'.join(sorted(parts))
         if len(fingerprint) == 0:
             fingerprint = default
