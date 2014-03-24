@@ -6,6 +6,7 @@ CREATE TABLE IF NOT EXISTS mapping (
     hash VARCHAR(40) PRIMARY KEY
 );
 
+# sha1 hexdigest is 40b
 CREATE TABLE IF NOT EXISTS sameas (
     a VARCHAR(40) NOT NULL,
     b VARCHAR(40) NOT NULL,

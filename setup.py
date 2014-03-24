@@ -2,7 +2,7 @@
 # coding: utf-8
 
 """
-triform gathers data for a same-as hub, similar to sameas.org
+luigi tasks for norm-data (dnb, viaf, dbpedia, and others)
 """
 
 import os
@@ -14,7 +14,7 @@ except:
 
 
 setup(name='triform',
-      version='0.0.1',
+      version='0.0.2',
       description='Gather data for a same-as service.',
       author='Martin Czygan',
       author_email='martin.czygan@gmail.com',
@@ -23,7 +23,4 @@ setup(name='triform',
       ],
       package_dir={'triform': 'triform'},
       # package_data={'triform': ['assets/*']},
-      scripts=[
-        'bin/triform',
-      ],
 )

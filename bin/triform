@@ -1,8 +1,0 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-from triform.base import *
-import luigi
-
-if __name__ == '__main__':
-    luigi.run()
