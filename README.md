@@ -166,9 +166,20 @@ A spider, that given a single GND:
 Sameas-service
 --------------
 
-* Sources like DBpedia are updated regularly (x month)
-* VIAF is updated about monthly
-* GND dump is updated monthly
+* DBpedia (semiyearly)
+* VIAF (monthly)
+* GND Dump (monthly)
+* Freebase (weekly)
+* BL metadata (e.g. http://bnb.data.bl.uk/, http://bnb.data.bl.uk/doc/person/ZzizingaA)
+* Pleiades (http://pleiades.stoa.org/)
+* LIBRIS (e.g. http://libris.kb.se/auth/31222)
+* http://data.southampton.ac.uk/
+
+Other sources:
+
+* http://www.ontotext.com/factforge/statistics3
+* http://jmatchparser.sourceforge.net/factbook/
+* http://jmatchparser.sourceforge.net/factbook/data/
 
 GNDs could be fetched on-demand.
 
