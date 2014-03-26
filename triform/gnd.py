@@ -60,7 +60,7 @@ class DNBStatus(GNDTask):
 
 
 class GNDDump(GNDTask):
-    """ Download, extract and filter the GND snapshot. """
+    """ Download the GND snapshot. """
 
     date = luigi.DateParameter(default=monthly())
 

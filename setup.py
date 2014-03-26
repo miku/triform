@@ -22,5 +22,4 @@ setup(name='triform',
         'triform',
       ],
       package_dir={'triform': 'triform'},
-      # package_data={'triform': ['assets/*']},
 )
